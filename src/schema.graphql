@@ -1,0 +1,14 @@
+type Query{
+    users:[User!]!
+    tasks:[Task!]!
+}
+type User{
+    id:ID!
+    name:String!
+    tasks:[Task]!
+}
+type Task{
+    id:ID!
+    task:String!
+    author:User!
+}
